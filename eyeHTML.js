@@ -2,8 +2,8 @@ const eye = document.getElementById('eye');
 const pupil = document.getElementById('pupil');
 
 eye.addEventListener('mousemove', (event) => {
-  const x = event.pageX - eye.offsetLeft - pupil.offsetWidth / 2;
-  const y = event.pageY - eye.offsetTop - pupil.offsetHeight / 2;
+  let x = event.pageX - eye.offsetLeft - pupil.offsetWidth / 2;
+  let y = event.pageY - eye.offsetTop - pupil.offsetHeight / 2;
   
   const maxX = eye.offsetWidth - pupil.offsetWidth;
   const maxY = eye.offsetHeight - pupil.offsetHeight;
